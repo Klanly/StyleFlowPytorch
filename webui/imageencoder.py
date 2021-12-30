@@ -69,7 +69,7 @@ def encoder_init(device):
     G.eval()
 
     encoder = CreateEncoder()
-    state_dict = torch.load('../mymodels/psp_encoder.pth', map_location=lambda storage, loc: storage)
+    state_dict = torch.load('/content/drive/MyDrive/ttmmpp/ML/StyleGanEnc/pretrained_models/psp_encoder.pth', map_location=lambda storage, loc: storage)
     encoder.load_state_dict(state_dict['encoder'])
     encoder.to(device)
     encoder.eval()
