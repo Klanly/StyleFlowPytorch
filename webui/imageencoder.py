@@ -64,7 +64,7 @@ def encode_real_images(device, G, encoder, dlatent_avg, faceimg, truncation_psi,
     return dlatents.detach().cpu().numpy()
 
 def encoder_init(device):
-    G = stylegan2.models.load('../mymodels/Gs_ffhq.pth')
+    G = stylegan2.models.load('/content/drive/MyDrive/ttmmpp/ML/StyleGanEnc/pretrained_models/Gs_ffhq.pth')
     G = utils.unwrap_module(G).to(device)
     G.eval()
 
