@@ -17,7 +17,7 @@ from DPR import dpr_init, get_lightvec
 from ffhq_dataset.face_alignment import image_align
 from ffhq_dataset.landmarks_detector import LandmarksDetector
 
-landmarks_model_path = "../mymodels/shape_predictor_68_face_landmarks.dat"
+landmarks_model_path = "/content/drive/MyDrive/ttmmpp/ML/StyleGanEnc/pretrained_models/shape_predictor_68_face_landmarks.dat"
 landmarks_detector = LandmarksDetector(landmarks_model_path)
 
 def getface(imagepath):
