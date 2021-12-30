@@ -289,7 +289,7 @@ def main():
     st.state.w_prev = torch.Tensor(st.state.w_current).clone().detach()
 
 def init_model():
-    model = stylegan2.models.load('../mymodels/Gs_ffhq.pth')
+    model = stylegan2.models.load('/content/drive/MyDrive/ttmmpp/ML/StyleGanEnc/pretrained_models/Gs_ffhq.pth')
     model = utils.unwrap_module(model).to(device)
     model.eval()
 
